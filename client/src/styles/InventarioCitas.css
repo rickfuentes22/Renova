@@ -1,0 +1,16 @@
+/* Agrega estos estilos al archivo CSS de tu componente o a tu hoja de estilos global */
+
+/* Estilo para el botón seleccionado */
+.selected {
+    background-color: #1890ff; /* Color de fondo cuando está seleccionado */
+    color: #fff; /* Color del texto cuando está seleccionado */
+    border-color: #1890ff; /* Color del borde cuando está seleccionado */
+  }
+  
+  /* Puedes agregar más estilos según sea necesario, por ejemplo, para cambiar el color al pasar el ratón sobre el botón seleccionado */
+  .selected:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  

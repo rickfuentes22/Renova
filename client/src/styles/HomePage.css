@@ -1,0 +1,65 @@
+.carousel-image {
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+  }
+  
+  .carousel-slide a {
+    display: block;
+    width: 100%; 
+    height: 100%; 
+  }
+
+.additional-image {
+    width: 50%; 
+    height: 100%;
+  }
+/* Estilos para el footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0e0757; /* Cambia el color de fondo según tus preferencias */
+    padding: 10px;
+    margin-top: auto; /* Empuja el footer hacia la parte inferior */
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 20px; /* Espacio entre los íconos */
+    align-items: center; /* Centra verticalmente los íconos en el footer */
+  }
+  
+  .footer-social a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center; /* Centra verticalmente los íconos dentro de los enlaces */
+  }
+  
+  /* Ajusta el tamaño del logotipo de Facebook en 35px */
+  .footer-social a:first-child img {
+    width: 35px; /* Ajusta el tamaño del logotipo de Facebook a 35px */
+    height: 35px;
+    margin: 0; /* Elimina el margen si lo hay para alinearlos */
+  }
+  
+  /* Ajusta el tamaño del logotipo de Instagram en 55px */
+  .footer-social a:last-child img {
+    width: 55px; /* Ajusta el tamaño del logotipo de Instagram a 55px */
+    height: 55px;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+
+
+  

@@ -1,0 +1,138 @@
+.main {
+  padding: 10px;
+  height: 100vh;
+  display: flex; /* Cambia a display: flex para que el contenido y el encabezado estén en la misma fila */
+  flex-direction: column; /* Cambia la dirección del flujo a columna para que el encabezado esté encima del contenido */
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 220px; /* Ancho del sidebar */
+  border-radius: 5px;
+  background: linear-gradient(70deg, rgb(88, 179, 189), rgb(66, 90, 135));
+  box-shadow: 0 0 2px gray;
+  color: rgb(0, 0, 0);
+}
+
+.content {
+  width: calc(100% - 220px); /* Ajusta el ancho del contenido según el sidebar */
+  margin-left: 220px; /* Elimina el margen izquierdo para que el contenido se junte con el sidebar */
+  height: 100%;
+  overflow-y: auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 84%; /* Ancho predeterminado para pantallas más grandes */
+  margin-right: 220px; /* Ajusta el margen derecho para que el header se junte con el sidebar */
+  box-shadow: 0 0 2px gray;
+  background: linear-gradient(70deg, rgb(88, 179, 189), rgb(66, 90, 135));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+
+.body {
+  margin-top: 10vh;
+  height: 85vh;
+  box-shadow: 0 0 2px gray;
+  background-color: white;
+  overflow-y: auto; /* Agrega desplazamiento vertical si el contenido es demasiado largo */
+  position: relative; /* Ajusta la posición relativa para el contenido */
+  z-index: 1; /* Asegura que el contenido esté por delante del header */
+}
+
+
+
+.logo h6 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0px;
+}
+.menu {
+  margin-top: 50px;
+}
+.menu-item {
+  margin-top: 30px;
+}
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.menu-item i {
+  font-size: 1.2rem;
+  margin: 0 15px;
+}
+.active {
+  background-color: white;
+  padding: 10px;
+}
+.active a,
+.active i {
+  color: rgba(66, 173, 255, 0.301);
+}
+
+.breadcrumb {
+  margin-right: 20px;
+}
+.breadcrumb-text {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.breadcrumb-text a {
+  text-decoration: none;
+  background-color: linear-gradient(70deg, rgb(88, 179, 189), rgb(66, 90, 135));
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #377de6;
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: flex-end;
+  margin: 0 15px;
+}
+
+.header-content i {
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.header-content a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
